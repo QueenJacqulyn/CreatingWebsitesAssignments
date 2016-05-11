@@ -1,2 +1,14 @@
+h1 {
+    font-size: 48px;
+}
 
-<img src="blob:https%3A//drive.google.com/cb7c10ce-76a9-4ee8-84b4-cc42d4f37489" class="drive-viewer-image-img drive-viewer-focus-to-default" alt="Displaying challenge_02.png" aria-hidden="true">
+div {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px solid #000;
+}
+
+#rounded {
+    border-radius: 50%;
+}
