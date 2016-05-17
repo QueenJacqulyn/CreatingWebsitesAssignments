@@ -5,7 +5,7 @@ html, body, div {
 }
 
 html, body, #atf {
-    height: 100%;
+    height: 90%;
 }
 
 html {
@@ -21,7 +21,7 @@ body {
 div {
     height: 20rem;
     width: 20rem;
-    background-color: #00C957;
+    background-color: #9400D3;
     border-radius: 4rem;
     animation-name: rotater;
     animation-duration: 2s;
@@ -31,5 +31,5 @@ div {
 
 @keyframes rotater {
     0% {transform:rotate(0deg);}
-    100% {transform:rotate(360deg);}
+    90% {transform:rotate(360deg);}
 }
