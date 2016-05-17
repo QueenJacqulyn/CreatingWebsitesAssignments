@@ -1,0 +1,6 @@
+*{color: blue;}
+
+:not(.OKB){color:red;}
+
+/* negation psuedo classes - we are making the whole doc red*/
+/* then anything not .OKB will turn red*/
