@@ -1,0 +1,22 @@
+div {
+    height: 50px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.one {
+    background-color: #008000;
+}
+
+.two {
+    background-color: #7B68EE;
+}
+
+.three {
+    background-color: #FF00FF;
+}
+
+.four {
+    background-color: #FFFF00;
+}
