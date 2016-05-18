@@ -1,0 +1,15 @@
+div {
+    width: 205px;
+    height: 195px;
+    margin: 0 auto;
+    border: 10px solid blue;
+    background-color: tomato;
+    border-radius: 100%;
+    /*border-radius: 10% 100%;*/
+    /*border-radius: 10% 100% 100% 25%;*/
+    /*
+    TRBL
+    TB RL
+    T R B L
+    */
+}
