@@ -1,0 +1,72 @@
+mixin shot(img, views, comments, likes, avatar, name, link)
+  a(href="#{link}").shot-wrap
+    .shot
+      img(src="#{img}")
+      .meta
+        div.views #{views}
+        div.comments #{comments}
+        div.likes #{likes}
+    .owner
+      img(src="#{avatar}").avatar
+      span.name #{name}
+
+doctype html
+
+html
+  head
+    meta(charset="utf-8")
+    title Flex Dribbble
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    
+  body
+    .header-banner
+      header.positioner
+        nav
+          img(src="https://d13yacurqjgara.cloudfront.net/assets/logo-small-937a908fea9453d9eb8c3bf05dd04632.png").logo
+          ul
+            li: a(href="") Shots
+            li: a(href="") Designers
+            li: a(href="") Team
+            li: a(href="") Meetups
+            li: a(href="") Jobs
+            li: a(href="") &bull; &bull; &bull;
+
+        .user-tools
+          img(src="https://d13yacurqjgara.cloudfront.net/users/5348/avatars/mini/travitar-31-600.png?1395953251").avatar
+          img(src="https://d13yacurqjgara.cloudfront.net/assets/icon-activity-8123503d4926740a2b90422717e30e28.png").activity
+          img(src="https://d13yacurqjgara.cloudfront.net/assets/icon-upload-5214988b602f98a209b812d67e73f0d2.png").upload
+          form.search-form
+            input(type="text" placeholder="Search")
+
+    nav.section-nav.positioner
+      a(href="").active Following
+      a(href="") Activity
+      a(href="") Suggestions
+
+
+
+      
+
+
+
+
+    section.shots.positioner
+
+      +shot("https://d13yacurqjgara.cloudfront.net/users/40433/screenshots/896977/dri_small_teaser.png", "137,186", "40", "3,002", "https://d13yacurqjgara.cloudfront.net/users/40433/avatars/mini/Screen_Shot_2013-10-04_at_10.19.58_PM.png", "UENO", "https://dribbble.com/shots/896977-Google-Grid")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/485324/screenshots/1581316/fireart_blog_teaser.jpg", "11,168", "111", "1,885", "https://d13yacurqjgara.cloudfront.net/users/485324/avatars/mini/FireArt_logo_%D0%BD%D0%B0_%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC2.jpg", "FireArt Studio", "https://dribbble.com/shots/1581316-Fireart-blog-illustration")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/5411/screenshots/1129680/ios-rip_teaser.jpg", "28,328", "105", "1,937", "https://d13yacurqjgara.cloudfront.net/users/5411/avatars/mini/995925_10151690627570688_868345894_n.jpg", "Marc Clancy", "https://dribbble.com/shots/1129680-iOS6-RIP")
+
+      +shot("https://d13yacurqjgara.cloudfront.net/users/99875/screenshots/1433198/mark-and-john_teaser.gif", "33,981", "86", "1,965", "https://d13yacurqjgara.cloudfront.net/users/99875/avatars/mini/R.jpg?1364210714", "R A D I O", "https://dribbble.com/shots/1433198-Zuck-Dawg-making-it-rain")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1080362/mcfly_gear_85_teaser.png", "21,380", "95", "1,943", "https://d13yacurqjgara.cloudfront.net/users/3460/avatars/mini/f6debbb5044f838dcf78bc3299172657.jpg", "Ryan Putnam", "https://dribbble.com/shots/1080362-McFly-Gear-1985")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/13774/screenshots/962088/walkups_teaser.jpg", "18,815", "70", "1,868", "https://d13yacurqjgara.cloudfront.net/users/13774/avatars/mini/Me_Web.jpg?1380768479", "Justin Mezzell", "https://dribbble.com/shots/962088-Call-Me-Maeby")
+
+      +shot("https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/931826/the_land_contour_teaser.jpg", "28,464", "63", "1,877", "https://d13yacurqjgara.cloudfront.net/users/60166/avatars/mini/yogaLogo.png", "Yoga Perdana", "https://dribbble.com/shots/931826-The-Land-Contour")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1276794/san-francisco-office_teaser.png", "17,495", "44", "1,468", "https://d13yacurqjgara.cloudfront.net/users/148611/avatars/mini/dropbox-logo.png", "Dropbox", "https://dribbble.com/shots/1276794-San-Francisco-Office")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/5411/screenshots/1174183/moving-in_teaser.jpg", "22,995", "74", "1,530", "https://d13yacurqjgara.cloudfront.net/users/5411/avatars/mini/995925_10151690627570688_868345894_n.jpg?1381924037", "Marc Clancy", "https://dribbble.com/shots/1174183-iOS-7-moves-in")
+
+      +shot("https://d13yacurqjgara.cloudfront.net/users/47731/screenshots/436011/mickey_or_bear_head_teaser.jpg", "25,843", "188", "1,496", "https://d13yacurqjgara.cloudfront.net/users/47731/avatars/mini/dribbble_profile_80x80_clair.jpg", "Abdallah Ahizoune", "https://dribbble.com/shots/436011-Playing-With-Number-3")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/45409/screenshots/323028/bt_buckslips_thumb_teaser.jpg", "24,105", "103", "1,655", "https://d13yacurqjgara.cloudfront.net/users/45409/avatars/original/a_logo.png", "Alex Rinker", "https://dribbble.com/shots/323028-Cocktail-Recipe-Cards")
+      +shot("https://d13yacurqjgara.cloudfront.net/users/3460/screenshots/1459661/cords_teaser.png", "12,673", "48", "1,350", "https://d13yacurqjgara.cloudfront.net/users/148611/avatars/mini/dropbox-logo.png?1376953166", "Dropbox", "https://dribbble.com/shots/1459661-Cords")
+
+  .ref-link.positioner
+    a(href="http://youtu.be/H1lREysgdgc") Check out the tutorial video YouTube
